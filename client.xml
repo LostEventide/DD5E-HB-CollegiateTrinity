@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root version="3.3" release="8|CoreRPG:4">
+	<reference static="true">
+		<classdata>
+			<wizard>
+				<name type="string">Wizard</name>
+				<text type="formattedtext">
+					<h>Wizard</h>
+					<p><b><i>This class is designed to provide the homebrew Collegiate Trinity arcane traditions. Please reference the Wizard class from the</i> Player's Handbook <i>for the full class description.</i></b></p>
+					<h>Features</h>
+					<listlink>
+						<link class="reference_classfeature" recordname="reference.classdata.wizard.features.spellcasting">Spellcasting</link>
+						<link class="reference_classfeature" recordname="reference.classdata.wizard.features.arcanerecovery">Arcane Recovery</link>
+						<link class="reference_classfeature" recordname="reference.classdata.wizard.features.arcanetradition">Arcane Tradition</link>
+						<link class="reference_classfeature" recordname="reference.classdata.wizard.features.abilityscoreimprovement">Ability Score Improvement</link>
+						<link class="reference_classfeature" recordname="reference.classdata.wizard.features.spellmastery">Spell Mastery</link>
+						<link class="reference_classfeature" recordname="reference.classdata.wizard.features.signaturespells">Signature Spells</link>
+					</listlink>
+					<h>Arcane Traditions</h>
+					<listlink>
+						<link class="reference_classability" recordname="reference.classdata.wizard.abilities.schoolofcatalytics">School of Catalytics</link>
+						<link class="reference_classability" recordname="reference.classdata.wizard.abilities.schoolofharmonics">School of Harmonics</link>
+						<link class="reference_classability" recordname="reference.classdata.wizard.abilities.schoolofmetrics">School of Metrics</link>
+					</listlink>
+				</text>
+				<hp>
+					<hitdice>
+						<name type="string">Hit Dice</name>
+						<text type="string">1d6 per wizard level</text>
+					</hitdice>
+				</hp>
+				<hitpointsat1stlevel>
+					<name type="string">Hit Points at 1st Level</name>
+					<text type="string">6 + your Constitution modifier</text>
+				</hitpointsat1stlevel>
+				<hitpointsathigherlevels>
+					<name type="string">Hit Points at higher levels</name>
+					<text type="string">1d6 (or 4) + your Constitution modifier per wizard level after 1st</text>
+				</hitpointsathigherlevels>
+				<proficiencies>
+					<armor>
+						<name type="string">Armor</name>
+						<text type="string">None</text>
+					</armor>
+					<weapons>
+						<name type="string">Weapons</name>
+						<text type="string">Daggers, darts, slings, quarterstaffs, light crossbows</text>
+					</weapons>
+					<tools>
+						<name type="string">Tools</name>
+						<text type="string">None</text>
+					</tools>
+					<savingthrows>
+						<name type="string">Saving Throws</name>
+						<text type="string">Intelligence, Wisdom</text>
+					</savingthrows>
+					<skills>
+						<name type="string">Skills</name>
+						<text type="string">Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion</text>
+					</skills>
+				</proficiencies>
+				<multiclassproficiencies>
+					<armor>
+						<name type="string">Armor</name>
+						<text type="string"></text>
+					</armor>
+					<weapons>
+						<name type="string">Weapons</name>
+						<text type="string"></text>
+					</weapons>
+					<tools>
+						<name type="string">Tools</name>
+						<text type="string"></text>
+					</tools>
+					<skills>
+						<name type="string">Skills</name>
+						<text type="string"></text>
+					</skills>
+				</multiclassproficiencies>
+				<features>
+					<!-- #Base class features -->
+					<spellcasting>
+						<name type="string">Spellcasting</name>
+						<level type="number">1</level>
+						<text type="formattedtext">
+							<p>As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power.</p>
+							<h>Cantrips</h>
+							<p>At 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table.</p>
+							<h>Spellbook</h>
+							<p>At 1st level, you have a spellbook containing six 1st-level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind.</p>
+							<h>Preparing and Casting Spells</h>
+							<p>The Wizard table shows how much mana you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend mana to create a slot of the spell's level or higher. You regain all expended mana when you finish a long rest.</p>
+							<p>You prepare the list of wizard spells that are available for you to cast. To do so, choose a number of wizard spells from your spellbook equal to your Intelligence modifier + your wizard level (minimum of one spell). The spells must be of a level you can cast.</p>
+							<p>For example, if you're a 3rd-level wizard, you can cast up to 2nd-level spells. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell <i>magic missile </i>, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.</p>
+							<p>You can change your list of prepared spells when you finish a long rest. Preparing a new list of wizard spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list.</p>
+							<h>Spellcasting Ability</h>
+							<p>Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+							<p><b>Spell save DC </b>= 8 + your proficiency bonus + your Intelligence modifier</p>
+							<p><b>Spell attack modifier </b>= your proficiency bonus + your Intelligence modifier</p>
+							<h>Ritual Casting</h>
+							<p>You can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.</p>
+							<h>Spellcasting Focus</h>
+							<p>You can use an arcane focus as a spellcasting focus for your wizard spells.</p>
+							<h>Learning Spells of 1st Level and Higher</h>
+							<p>Each time you gain a wizard level, you can add two wizard spells of your choice to your spellbook for free. Each of these spells must be of a level you can cast, as shown on the Wizard table. On your adventures, you might find other spells that you can add to your spellbook.</p>
+							<p><b>-------------------------------------------------------------------------------</b></p>
+							<h>Your Spellbook</h>
+							<p>The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard's chest, for example, or in a dusty tome in an ancient library.</p>
+							<p><b>Copying a Spell into the Book</b></p>
+							<p>When you find a wizard spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it.</p>
+							<p>Copying that spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation.</p>
+							<p>For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells.</p>
+							<p><b>Replacing the Book</b></p>
+							<p>You can copy a spell from your own spellbook into another book--for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell.</p>
+							<p>If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place.</p>
+							<p><b>The Book's Appearance</b></p>
+							<p>Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap.</p>
+						</text>
+					</spellcasting>
+					<arcanerecovery>
+						<name type="string">Arcane Recovery</name>
+						<level type="number">1</level>
+						<text type="formattedtext">
+							<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you may recover mana equal to 2 + half your wizard level, rounded up.</p>
+						</text>
+					</arcanerecovery>
+					<arcanetradition>
+						<name type="string">Arcane Tradition</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
+						</text>
+						<specializationchoice type="number">1</specializationchoice>
+					</arcanetradition>
+					<abilityscoreimprovement>
+						<name type="string">Ability Score Improvement</name>
+						<level type="number">4</level>
+						<text type="formattedtext">
+							<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+						</text>
+					</abilityscoreimprovement>
+					<spellmastery>
+						<name type="string">Spell Mastery</name>
+						<level type="number">18</level>
+						<text type="formattedtext">
+							<p>At 18th level, you have achieved such mastery over certain spells that you can cast them at will. Choose a 1st-level wizard spell and a 2nd-level wizard spell that are in your Spellbook. You can cast those spells at their lowest level without expending mana when you have them prepared. If you want to cast either spell at a higher level, you must expend mana as normal.</p>
+							<p>By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels.</p>
+						</text>
+					</spellmastery>
+					<signaturespells>
+						<name type="string">Signature Spells</name>
+						<level type="number">20</level>
+						<text type="formattedtext">
+							<p>When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two 3rd-level wizard spells in your Spellbook as your signature spells. You always have these spells prepared, they don't count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending mana. When you do so, you can't do so again until you finish a short or long rest.</p>
+							<p>If you want to cast either spell at a higher level, you must expend mana as normal.</p>
+						</text>
+					</signaturespells>
+					<!-- #School of Catalytics tradition abilities -->
+					<studentofcatalytics>
+						<name type="string">Student of Catalytics</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>Beginning when you select this school at 2nd level, the time it takes to copy spells into your spellbook is halved. Additionally, only those who have studied within the School of Catalytics can understand the reversible and cross-referencing formulae with which you encode your spells.</p>
+						</text>
+						<specialization type="string">School of Catalytics</specialization>
+					</studentofcatalytics>
+					<arcaneconservation>
+						<name type="string">Arcane Conservation</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>Also at 2nd level, when you cast a spell with a casting time of one action, you may choose for it not to come into effect immediately and instead become buffered. Your buffered spell may be held for up to 1 minute after which it diffuses without effect if you have not released it. You may release the buffered spell as a bonus action on any of your turns as if you had just cast it, where it resolves normally. You must release a buffered spell before buffering another.</p>
+							<p>You may use this ability to buffer a spell a number of times per long rest equal to your Intelligence modifier (minimum 1).</p>
+						</text>
+						<specialization type="string">School of Catalytics</specialization>
+					</arcaneconservation>
+					<absorptivebuffer>
+						<name type="string">Absorptive Buffer</name>
+						<level type="number">6</level>
+						<text type="formattedtext">
+							<p>Beginning at 6th level, when you are the target of a hostile magical effect that requires a saving throw, you may use your reaction in one of the following ways if you have an active spell buffer:</p>
+							<list>
+								<li>Your buffered spell's level is increased by 1 as if you had used a higher level spell slot. It takes effect as such when it is released. The same buffered spell cannot benefit more than once using this ability.</li>
+								<li>Your buffered spell is released and does not take effect. You gain advantage on the saving throw against the magical effect.</li>
+							</list>
+						</text>
+						<specialization type="string">School of Catalytics</specialization>
+					</absorptivebuffer>
+					<chainreaction>
+						<name type="string">Chain Reaction</name>
+						<level type="number">10</level>
+						<text type="formattedtext">
+							<p>At 10th level, you learn to recycle your spells' reactants and save them for future use. When one of your spells of 5th level or lower with a duration longer than instantaneous expires and you do not have a buffered spell, the expired spell becomes buffered and available for release one last time. You may use this ability once, after which you must finish a long rest to use it again. Buffering a spell this way does not count against your number of uses of Arcane Conservation.</p>
+						</text>
+						<specialization type="string">School of Catalytics</specialization>
+					</chainreaction>
+					<flashpoint>
+						<name type="string">Flashpoint</name>
+						<level type="number">14</level>
+						<text type="formattedtext">
+							<p>At 14th level your buffered spells produce an additional effect from the list below when released.</p>
+							<list>
+								<li>One creature within 5 feet of you must make a Constitution saving throw as if against one of your spells or be stunned for one turn.</li>
+								<li>You shove one creature within 5 feet of you with magical force, using your spell's saving throw DC instead of Strength (Athletics).</li>
+							</list>
+						</text>
+						<specialization type="string">School of Catalytics</specialization>
+					</flashpoint>
+					<!-- #School of Harmonics tradition abilities -->
+					<studentofharmonics>
+						<name type="string">Student of Harmonics</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>Beginning when you select this school at 2nd level, the cost associated with copying spells into your spellbook is halved. In addition, the diagrams, ratios, and coordinates which compose your spell formulae are a mystery to those who have not studied within the School of Harmonics.</p>
+						</text>
+						<specialization type="string">School of Harmonics</specialization>
+					</studentofharmonics>
+					<resonance>
+						<name type="string">Resonance</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>Also beginning at 2nd level, every time you expend a spell slot of 1st level or higher you gain one point of resonance. You can spend a number of points of resonance to treat a spell you cast as though you used a spell slot one level higher. The number of resonance points required to do so equals the modified spell level. Resonance points are lost when you finish a long rest.</p>
+						</text>
+						<specialization type="string">School of Harmonics</specialization>
+					</resonance>
+					<arcanepropogation>
+						<name type="string">Arcane Propogation</name>
+						<level type="number">6</level>
+						<text type="formattedtext">
+							<p>At 6th level, when you cast a spell of 1st level or higher with a duration longer than instantaneous, you can choose to expend 3 points of resonance as part of the action to give the spell the following property. When the spell's effect ends on a target, it renews itself on a different target of your choosing within 30 feet. The duration of this renewed effect is half as long as the original duration.</p>
+						</text>
+						<specialization type="string">School of Harmonics</specialization>
+					</arcanepropogation>
+					<lastingreverberations>
+						<name type="string">Lasting Reverberations</name>
+						<level type="number">10</level>
+						<text type="formattedtext">
+							<p>When you reach 10th level, you can expend 3 resonance points when you release concentration on a spell either electively or involuntarily. On your next turn, make a Constitution saving throw as if you were sill concentrating on the spell. If you succeed, the spell's effects and your concentration resume as if you never lost concentration.</p>
+						</text>
+						<specialization type="string">School of Harmonics</specialization>
+					</lastingreverberations>
+					<harmonicinterference>
+						<name type="string">Harmonic Interference</name>
+						<level type="number">14</level>
+						<text type="formattedtext">
+							<p>Beginning at 14th level, you may expend 3 resonance points as a bonus action to interfere with magical effects in one of the following ways:</p>
+							<list>
+								<li>Force a caster concentrating on or casting a spell to make a Constitution saving throw or lose the spell.</li>
+								<li>Grant a creature under the effects of magic advantage on their next saving throw to resist said magical effect.</li>
+								<li>Grant yourself or another caster advantage on their next ability check to dispel magic.</li>
+							</list>
+						</text>
+						<specialization type="string">School of Harmonics</specialization>
+					</harmonicinterference>
+					<!-- #School of Metrics tradition abilities -->
+					<studentofmetrics>
+						<name type="string">Student of Metrics</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>Beginning when you select this school at 2nd level, the number of pages it takes to copy a spell into your spellbook is always 1. Additionally, the dimensions, vectors, and equations that comprise your spell formulae confound those who have not studied the field of arcane metrics.</p>
+						</text>
+						<specialization type="string">School of Metrics</specialization>
+					</studentofmetrics>
+					<arithmancy>
+						<name type="string">Arithmancy</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>Also at 2nd level, whenever you cast a spell which requires you to roll a number of dice greater than 1, you may disregard the lowest die roll (choose one if multiple dice show the same lowest result) and put this die aside. At another time when a spell you cast requires you to roll a die or dice, you may roll the die you set aside and add it to the total for the new spell.</p>
+							<p>You may only keep one die reserved like this at a time. You may use this ability a number of times equal to your Intelligence modifier (minimum 1). Any dice you have reserved are lost and you regain all uses of this ability when you finish a long rest.</p>
+						</text>
+						<specialization type="string">School of Metrics</specialization>
+					</arithmancy>
+					<arcaneintegration>
+						<name type="string">Arcane Integration</name>
+						<level type="number">6</level>
+						<text type="formattedtext">
+							<p>Beginning at 6th level, you can integrate your understanding of the basic building blocks of magic into combat. You may roll and add a die you have set aside with Arithmancy to any damage roll you make as part of a normal attack, or add it to your AC as a reaction against a single attack made against you.</p>
+						</text>
+						<specialization type="string">School of Metrics</specialization>
+					</arcaneintegration>
+					<zenosrecovery>
+						<name type="string">Zeno's Recovery</name>
+						<level type="number">10</level>
+						<text type="formattedtext">
+							<p>Beginning at 10th level, your spellcasting never quite reaches its limit. When you use a spell slot of 5th level or higher to cast a spell and your uses of Arthimancy are expended, you regain one use of that ability.</p>
+						</text>
+						<specialization type="string">School of Metrics</specialization>
+					</zenosrecovery>
+					<efficientmetrics>
+						<name type="string">Efficient Metrics</name>
+						<level type="number">14</level>
+						<text type="formattedtext">
+							<p>Beginning at 14th level, you may cast a spell using a spell slot one level lower than the spell normally requires (minimum of 1st) if you can accomodate at least one of the following modifications:</p>
+							<list>
+								<li>The spell's listed duration is halved.</li>
+								<li>The spell's listed range is halved.</li>
+								<li>The spell's number of targets is reduced to one.</li>
+								<li>The spell's radius is halved.</li>
+							</list>
+							<p>Altering the spell in more than one of the ways listed above does not reduce the spell slot level required further than one level lower. A spell whose parameters cannot logically be modified in any of these ways cannot be cast with the use of Efficient Metrics.</p>
+						</text>
+						<specialization type="string">School of Metrics</specialization>
+					</efficientmetrics>
+				</features>
+				<abilities>
+					<schoolofcatalytics>
+						<name type="string">School of Catalytics</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>Wizards of the School of Catalytics are masters of the interworkings between different kinds of spells and the precise conditions under which they are most successful. They delve deep into the mechanics of magic, not merely the observable effects or the measurements of spell components. Every reaction has a trigger. It is the student of catalytics' job to find not just what that trigger is, but which of many is the best.</p>
+							<h>Features</h>
+							<listlink>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.studentofcatalytics">Student of Catalytics</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.arcaneconservation">Arcane Conservation</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.absorptivebuffer">Absorptive Buffer</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.chainreaction">Chain Reaction</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.flashpoint">Flashpoint</link>
+							</listlink>
+						</text>
+					</schoolofcatalytics>
+					<schoolofharmonics>
+						<name type="string">School of Harmonics</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>The School of Harmonics is based on the concept of resonating magical structures and the ideas of consonance and dissonance. Certain magical reverberations will complement each other if cast "in tune," whereas others can cause interference and dampen a magical effect. Wizards of this tradition collect resonant energy with each casting of a spell, and learn how to manipulate this resonance to complement or subtract from magical architectures they might then encounter.</p>
+							<h>Features</h>
+							<listlink>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.studentofharmonics">Student of Harmonics</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.resonance">Resonance</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.arcanepropogation">Arcane Propogation</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.lastingreverberations">Lasting Reverberations</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.harmonicinterference">Harmonic Interference</link>
+							</listlink>
+						</text>
+					</schoolofharmonics>
+					<schoolofmetrics>
+						<name type="string">School of Metrics</name>
+						<level type="number">2</level>
+						<text type="formattedtext">
+							<p>Wizards of the School of Metrics are obsessed with numbers and proportions. These wizards learn how to shift magical matrices to achieve greater flexibility in their spellcasting routines--adding, subtracting, and dividing obscure metaphysical quantities.</p>
+							<h>Features</h>
+							<listlink>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.studentofmetrics">Student of Metrics</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.arithmancy">Arithmancy</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.arcaneintegration">Arcane Integration</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.zenosrecovery">Zeno's Recovery</link>
+								<link class="reference_classfeature" recordname="reference.classdata.wizard.features.efficientmetrics">Efficient Metrics</link>
+							</listlink>
+						</text>
+					</schoolofmetrics>
+				</abilities>
+			</wizard>
+		</classdata>
+	</reference>
+	<lists>
+		<archetypes>
+			<byclass>
+				<description type="string">Archetypes</description>
+				<groups>
+					<wizard>
+						<description type="string">Wizard</description>
+						<index>
+							<schoolofcatalytics>
+								<name type="string">School of Catalytics</name>
+								<link type="windowreference">
+									<class>reference_class</class>
+									<recordname>reference.classdata.wizard</recordname>
+								</link>
+							</schoolofcatalytics>
+							<schoolofharmonics>
+								<name type="string">School of Harmonics</name>
+								<link type="windowreference">
+									<class>reference_class</class>
+									<recordname>reference.classdata.wizard</recordname>
+								</link>
+							</schoolofharmonics>
+							<schoolofmetrics>
+								<name type="string">School of Metrics</name>
+								<link type="windowreference">
+									<class>reference_class</class>
+									<recordname>reference.classdata.wizard</recordname>
+								</link>
+							</schoolofmetrics>
+						</index>
+					</wizard>
+				</groups>
+			</bylclass>
+		</archetypes>
+	</lists>
+	<library>
+		<DD5E-HB-CollegiateTrinity>
+			<name type="string">DD5E HB: Collegiate Trinity</name>
+			<categoryname type="string">Homebrew</categoryname>
+			<entries>
+				<r01archetypes>
+					<librarylink type="windowreference">
+						<class>reference_colindex</class>
+						<recordname>lists.archetypes.byclass</recordname>
+					</librarylink>
+					<name type="string">Archetypes</name>
+				</r01archetypes>				
+			</entries>
+		</DD5E-HB-CollegiateTrinity>
+	</library>
+</root>
+
+
+
+
+
+
+
+
+
+
+
+
+
